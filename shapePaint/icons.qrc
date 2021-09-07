@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/Jessica">
+        <file>icons/Open.png</file>
+        <file>icons/AddPoint.png</file>
+        <file>icons/Circle.png</file>
+        <file>icons/Clip.png</file>
+        <file>icons/Curve.png</file>
+        <file>icons/DeletePoint.png</file>
+        <file>icons/Ellipse.png</file>
+        <file>icons/Help.png</file>
+        <file>icons/Line.png</file>
+        <file>icons/Octagon.png</file>
+        <file>icons/Palette.png</file>
+        <file>icons/Rectangle.png</file>
+        <file>icons/Rotate.png</file>
+        <file>icons/Save.png</file>
+        <file>icons/Translate.png</file>
+        <file>icons/Trash.png</file>
+        <file>icons/Triangle.png</file>
+        <file>icons/Undo.png</file>
+        <file>icons/ZoomIn.png</file>
+        <file>icons/ZoomOut.png</file>
+        <file>icons/Redo.png</file>
+        <file>icons/connectLine.png</file>
+        <file>icons/copy.png</file>
+        <file>icons/combine.png</file>
+    </qresource>
+</RCC>

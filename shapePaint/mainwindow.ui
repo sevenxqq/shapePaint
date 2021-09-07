@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>831</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>5</y>
+      <width>811</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>831</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_open"/>
+   <addaction name="action_save"/>
+   <addaction name="separator"/>
+   <addaction name="action_line"/>
+   <addaction name="action_connectLine"/>
+   <addaction name="action_triangle"/>
+   <addaction name="action_rectangle"/>
+   <addaction name="action_polygon"/>
+   <addaction name="action_circle"/>
+   <addaction name="action_ellipse"/>
+   <addaction name="action_combine"/>
+   <addaction name="separator"/>
+   <addaction name="action_translate"/>
+   <addaction name="action_copy"/>
+   <addaction name="action_trash"/>
+   <addaction name="separator"/>
+   <addaction name="action_undo"/>
+   <addaction name="action_pallet"/>
+   <addaction name="action_penUp"/>
+   <addaction name="action_penDown"/>
+  </widget>
+  <action name="action_open">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Open.png</normaloff>:/Jessica/icons/Open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Save.png</normaloff>:/Jessica/icons/Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_line">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Line.png</normaloff>:/Jessica/icons/Line.png</iconset>
+   </property>
+   <property name="text">
+    <string>直线</string>
+   </property>
+  </action>
+  <action name="action_triangle">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Triangle.png</normaloff>:/Jessica/icons/Triangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>三角形</string>
+   </property>
+  </action>
+  <action name="action_rectangle">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Rectangle.png</normaloff>:/Jessica/icons/Rectangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>矩形</string>
+   </property>
+  </action>
+  <action name="action_circle">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Circle.png</normaloff>:/Jessica/icons/Circle.png</iconset>
+   </property>
+   <property name="text">
+    <string>圆</string>
+   </property>
+  </action>
+  <action name="action_ellipse">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Ellipse.png</normaloff>:/Jessica/icons/Ellipse.png</iconset>
+   </property>
+   <property name="text">
+    <string>椭圆</string>
+   </property>
+  </action>
+  <action name="action_translate">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Translate.png</normaloff>:/Jessica/icons/Translate.png</iconset>
+   </property>
+   <property name="text">
+    <string>平移</string>
+   </property>
+  </action>
+  <action name="action_rotate">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Rotate.png</normaloff>:/Jessica/icons/Rotate.png</iconset>
+   </property>
+   <property name="text">
+    <string>旋转</string>
+   </property>
+  </action>
+  <action name="action_polygon">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Octagon.png</normaloff>:/Jessica/icons/Octagon.png</iconset>
+   </property>
+   <property name="text">
+    <string>多边形</string>
+   </property>
+  </action>
+  <action name="action_clip">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Clip.png</normaloff>:/Jessica/icons/Clip.png</iconset>
+   </property>
+   <property name="text">
+    <string>裁剪</string>
+   </property>
+  </action>
+  <action name="action_pallet">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Palette.png</normaloff>:/Jessica/icons/Palette.png</iconset>
+   </property>
+   <property name="text">
+    <string>调色板</string>
+   </property>
+  </action>
+  <action name="action_trash">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Trash.png</normaloff>:/Jessica/icons/Trash.png</iconset>
+   </property>
+   <property name="text">
+    <string>垃圾桶</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Help.png</normaloff>:/Jessica/icons/Help.png</iconset>
+   </property>
+   <property name="text">
+    <string>帮助</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="action_undo">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Undo.png</normaloff>:/Jessica/icons/Undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤回</string>
+   </property>
+  </action>
+  <action name="action_redo">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/Redo.png</normaloff>:/Jessica/icons/Redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>恢复</string>
+   </property>
+  </action>
+  <action name="action_connectLine">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/connectLine.png</normaloff>:/Jessica/icons/connectLine.png</iconset>
+   </property>
+   <property name="text">
+    <string>连接线</string>
+   </property>
+  </action>
+  <action name="action_copy">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/copy.png</normaloff>:/Jessica/icons/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>拷贝</string>
+   </property>
+  </action>
+  <action name="action_combine">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/combine.png</normaloff>:/Jessica/icons/combine.png</iconset>
+   </property>
+   <property name="text">
+    <string>组合图形</string>
+   </property>
+  </action>
+  <action name="action_penUp">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/AddPoint.png</normaloff>:/Jessica/icons/AddPoint.png</iconset>
+   </property>
+   <property name="text">
+    <string>加粗</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+=</string>
+   </property>
+  </action>
+  <action name="action_penDown">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/Jessica/icons/DeletePoint.png</normaloff>:/Jessica/icons/DeletePoint.png</iconset>
+   </property>
+   <property name="text">
+    <string>减细</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
